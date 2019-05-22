@@ -8,8 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		00D0F39D229472DB0099CD20 /* Data_Structures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00D0F393229472DB0099CD20 /* Data_Structures.framework */; };
-		00D0F3A2229472DB0099CD20 /* Data_StructuresTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D0F3A1229472DB0099CD20 /* Data_StructuresTests.swift */; };
+		00D0F3A2229472DB0099CD20 /* LinkedListsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D0F3A1229472DB0099CD20 /* LinkedListsTests.swift */; };
 		00D0F3A4229472DB0099CD20 /* Data_Structures.h in Headers */ = {isa = PBXBuildFile; fileRef = 00D0F396229472DB0099CD20 /* Data_Structures.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00D0F3B0229473130099CD20 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D0F3AF229473130099CD20 /* LinkedList.swift */; };
+		00D0F3B52294740E0099CD20 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D0F3B42294740E0099CD20 /* Node.swift */; };
+		00D0F3B92294B6390099CD20 /* ListError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D0F3B82294B6390099CD20 /* ListError.swift */; };
+		00D0F3BC22957DB90099CD20 /* ListProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D0F3BB22957DB90099CD20 /* ListProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,8 +31,12 @@
 		00D0F396229472DB0099CD20 /* Data_Structures.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Data_Structures.h; sourceTree = "<group>"; };
 		00D0F397229472DB0099CD20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00D0F39C229472DB0099CD20 /* Data StructuresTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Data StructuresTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		00D0F3A1229472DB0099CD20 /* Data_StructuresTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data_StructuresTests.swift; sourceTree = "<group>"; };
+		00D0F3A1229472DB0099CD20 /* LinkedListsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListsTests.swift; sourceTree = "<group>"; };
 		00D0F3A3229472DB0099CD20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00D0F3AF229473130099CD20 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
+		00D0F3B42294740E0099CD20 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		00D0F3B82294B6390099CD20 /* ListError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListError.swift; sourceTree = "<group>"; };
+		00D0F3BB22957DB90099CD20 /* ListProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +79,7 @@
 		00D0F395229472DB0099CD20 /* Data Structures */ = {
 			isa = PBXGroup;
 			children = (
+				00D0F3BA22957D880099CD20 /* Lists */,
 				00D0F396229472DB0099CD20 /* Data_Structures.h */,
 				00D0F397229472DB0099CD20 /* Info.plist */,
 			);
@@ -80,10 +89,37 @@
 		00D0F3A0229472DB0099CD20 /* Data StructuresTests */ = {
 			isa = PBXGroup;
 			children = (
-				00D0F3A1229472DB0099CD20 /* Data_StructuresTests.swift */,
+				00D0F3A1229472DB0099CD20 /* LinkedListsTests.swift */,
 				00D0F3A3229472DB0099CD20 /* Info.plist */,
 			);
 			path = "Data StructuresTests";
+			sourceTree = "<group>";
+		};
+		00D0F3AD229472E70099CD20 /* Linked Lists */ = {
+			isa = PBXGroup;
+			children = (
+				00D0F3AE229472F20099CD20 /* Linked List */,
+			);
+			path = "Linked Lists";
+			sourceTree = "<group>";
+		};
+		00D0F3AE229472F20099CD20 /* Linked List */ = {
+			isa = PBXGroup;
+			children = (
+				00D0F3AF229473130099CD20 /* LinkedList.swift */,
+				00D0F3B42294740E0099CD20 /* Node.swift */,
+			);
+			path = "Linked List";
+			sourceTree = "<group>";
+		};
+		00D0F3BA22957D880099CD20 /* Lists */ = {
+			isa = PBXGroup;
+			children = (
+				00D0F3B82294B6390099CD20 /* ListError.swift */,
+				00D0F3BB22957DB90099CD20 /* ListProtocol.swift */,
+				00D0F3AD229472E70099CD20 /* Linked Lists */,
+			);
+			path = Lists;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +184,7 @@
 				TargetAttributes = {
 					00D0F392229472DB0099CD20 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 					00D0F39B229472DB0099CD20 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -194,6 +231,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00D0F3B52294740E0099CD20 /* Node.swift in Sources */,
+				00D0F3B92294B6390099CD20 /* ListError.swift in Sources */,
+				00D0F3B0229473130099CD20 /* LinkedList.swift in Sources */,
+				00D0F3BC22957DB90099CD20 /* ListProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00D0F3A2229472DB0099CD20 /* Data_StructuresTests.swift in Sources */,
+				00D0F3A2229472DB0099CD20 /* LinkedListsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +382,7 @@
 		00D0F3A8229472DB0099CD20 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -358,6 +400,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.revoltapplications.Data-Structures";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -366,6 +409,7 @@
 		00D0F3A9229472DB0099CD20 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -391,6 +435,7 @@
 		00D0F3AB229472DB0099CD20 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6YUP5Q2DLS;
 				INFOPLIST_FILE = "Data StructuresTests/Info.plist";
@@ -409,6 +454,7 @@
 		00D0F3AC229472DB0099CD20 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6YUP5Q2DLS;
 				INFOPLIST_FILE = "Data StructuresTests/Info.plist";

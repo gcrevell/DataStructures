@@ -19,16 +19,23 @@ class Data_StructuresTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testSizeOf() {
+        let list = LinkedList<Int>()
+        XCTAssert(list.size == 0)
     }
 
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testAppend() {
+        let list = LinkedList<Int>()
+
+        list.append(1)
+        list.append(2)
+        list.append(3)
+
+        XCTAssertEqual(list.size, 3)
+        XCTAssertEqual(list.get(at: 0), 1)
+        XCTAssertEqual(list.get(at: 1), 2)
+        XCTAssertEqual(list.get(at: 2), 3)
     }
 
+    func testLink
 }
